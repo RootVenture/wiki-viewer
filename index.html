@@ -1,0 +1,37 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Wikipedia Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>WikipediA</h1>
+    <h3>The Free Encyclopedia</h3>
+    <img src="https://image.ibb.co/e6vOFQ/wikipedia.png" alt="Wikipedia Logo">
+    <div class="row">
+      <div class="searchForm">
+        <form class="card">
+          <label for="search">
+            <input type="text" name="search" id="search">
+            <input type="submit" value="Go">
+          </label>
+          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener">
+            I'm Feeling Lucky
+            <i class="fas fa-random"></i>
+          </a>
+        </form>
+      </div>
+      <div class="results">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
