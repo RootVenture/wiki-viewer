@@ -5,22 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 </head>
 
 <body>
+  <!-- Noise to help gradient banding -->
+  <div id="grad">
+    <div id="noise"></div>
+  </div>
+
+  <div id="particles-js"></div>
+
   <div class="container">
-    <h1>WikipediA</h1>
+    <h1 id="mainTitle">WikipediA</h1>
     <h3>The Free Encyclopedia</h3>
-    <img src="https://image.ibb.co/e6vOFQ/wikipedia.png" alt="Wikipedia Logo">
     <div class="row">
       <div class="searchForm">
-        <form class="card">
+        <form>
           <label for="search">
             <input type="text" name="search" id="search">
-            <input type="submit" value="Go">
+            <input type="submit" value="Go" id="searchBtn">
           </label>
           <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener">
             I'm Feeling Lucky
@@ -32,6 +38,20 @@
       </div>
     </div>
   </div>
+
+  <div class="footer">
+    <p>by
+      <span>
+        <a href="http://www.raywu.me" target="_blank">Raymond Wu</a>
+      </span>
+      a
+      <em>FreeCodeCamp</em> Project
+    </p>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="main.js"></script>
+  <script src="./scripts/particles.js"></script>
+  <script src="scripts/lib/stats.js"></script>
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/anime.js"></script>
+  <script src="./scripts/main.js"></script>
 </body>

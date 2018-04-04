@@ -1,4 +1,4 @@
-const form = document.querySelector('.card');
+const form = document.querySelector('.searchForm');
 const search = document.querySelector('#search');
 const results = document.querySelector('.results');
 
