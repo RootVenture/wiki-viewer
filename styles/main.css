@@ -8,6 +8,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   z-index: 1;
 }
+
 *,
 *:before,
 *:after {
@@ -233,7 +234,6 @@ label {
   text-align: center;
   margin-top: 17%;
   opacity: 0.95;
-  color: #fff;
 }
 
 #grad {
